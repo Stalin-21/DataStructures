@@ -7,6 +7,19 @@ public class LinkedList<T> {
         head = newNode;
     }
 
+    public void append(T data) {
+        if (head == null) {
+            Node<T> newNode = new Node<>(data);
+            head = newNode;
+        }else{
+            Node<T> current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = new Node<>(data);
+        }
+    }
+
     public void printList() {
         Node<T> current = head;
 
