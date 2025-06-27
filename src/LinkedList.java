@@ -20,6 +20,20 @@ public class LinkedList<T> {
         }
     }
 
+    public void insertAfter(T targerData, T newData) {
+        Node<T> current = head;
+        while(current != null && !current.data.equals(targerData)) {
+            current = current.next;
+        }
+        if (current == null) {
+            System.out.println("Target node not found.");
+            return;
+        }
+        Node<T> newNode = new Node<>(newData);
+        newNode.next = current.next;
+        current.next = newNode;
+    }
+
     public void printList() {
         Node<T> current = head;
 
