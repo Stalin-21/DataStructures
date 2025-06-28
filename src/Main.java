@@ -10,21 +10,23 @@ public class Main {
 
         System.out.print("Created list: " );
         list.printList();
-        System.out.println();
 
         // Use Case 4
         list.insertAfter(30,46);
 
         System.out.print("List before pop: ");
         list.printList();
-        System.out.println();
 
         // UC 5: Pop first element
         list.pop();  // Pop the first element 56
         System.out.print("List after popping head: ");
-
         list.printList();
 
+
+        // UC 6: Pop last element
+        list.popLast();
+        System.out.print("List after popping last: ");
+        list.printList();
 
     }
 }
