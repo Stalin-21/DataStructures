@@ -2,14 +2,29 @@ public class Main {
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<>();
 
-        // Use Case 3
+
+        // UC 1 + UC 2 + UC 3: Create list with append
         list.append(56);
         list.append(30);
         list.append(70);
 
-        list.insertAfter(30,46);  // Use Case 4
+        System.out.print("Created list: " );
+        list.printList();
+        System.out.println();
+
+        // Use Case 4
+        list.insertAfter(30,46);
+
+        System.out.print("List before pop: ");
+        list.printList();
+        System.out.println();
+
+        // UC 5: Pop first element
+        list.pop();  // Pop the first element 56
+        System.out.print("List after popping head: ");
 
         list.printList();
+
 
     }
 }
