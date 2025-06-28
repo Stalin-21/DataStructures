@@ -28,5 +28,9 @@ public class Main {
         System.out.print("List after popping last: ");
         list.printList();
 
+        // UC 7: Search for 30
+        boolean found = list.search(30);
+        System.out.println("UC7 Search for 30: " + (found ? "Found" : "Not Found"));
+
     }
 }
