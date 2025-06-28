@@ -70,8 +70,6 @@ public class LinkedList<T> {
     }
 
 
-
-
     public void printList() {
         Node<T> current = head;
 

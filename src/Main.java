@@ -32,5 +32,8 @@ public class Main {
         boolean found = list.search(30);
         System.out.println("UC7 Search for 30: " + (found ? "Found" : "Not Found"));
 
+        //UC 8: Insert 40 after 30
+        list.insertAfter(30, 40);
+
     }
 }
