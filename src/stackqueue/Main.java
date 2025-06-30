@@ -11,5 +11,15 @@ public class Main {
 
         System.out.print("Stack after UC1 pushes: ");
         stack.printStack();  // print: 56 -> 30 -> 70
+
+        System.out.println("\nUC2: Peek and pop elements");
+        while (true) {
+            Integer top = stack.peek();
+            if (top == null) break;  // stack is empty
+            System.out.println("Peeked: " + top);
+            System.out.println("Popped: " + stack.pop());
+            System.out.print("Current stack: ");
+            stack.printStack();
+        }
     }
 }

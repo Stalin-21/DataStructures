@@ -1,7 +1,7 @@
 package linkedlist;
 
 public class LinkedList<T> {
-    Node<T> head;
+    private Node<T> head;  // Now explicitly private for encapsulation
 
     public void addAtHead(T data) {
         Node<T> newNode = new Node<>(data);
@@ -11,9 +11,8 @@ public class LinkedList<T> {
 
     public void append(T data) {
         if (head == null) {
-            Node<T> newNode = new Node<>(data);
-            head = newNode;
-        }else{
+            head = new Node<>(data);
+        } else {
             Node<T> current = head;
             while (current.next != null) {
                 current = current.next;
@@ -22,9 +21,9 @@ public class LinkedList<T> {
         }
     }
 
-    public void insertAfter(T targerData, T newData) {
+    public void insertAfter(T targetData, T newData) {
         Node<T> current = head;
-        while(current != null && !current.data.equals(targerData)) {
+        while (current != null && !current.data.equals(targetData)) {
             current = current.next;
         }
         if (current == null) {
@@ -98,14 +97,18 @@ public class LinkedList<T> {
         return count;
     }
 
+    public T getHeadData() {
+        return (head != null) ? head.data : null;
+    }
 
+    public boolean isEmpty() {
+        return head == null;
+    }
 
     public void printList() {
         Node<T> current = head;
-
         while (current != null) {
             System.out.print(current.data);
-
             if (current.next != null) {
                 System.out.print(" -> ");
             }
