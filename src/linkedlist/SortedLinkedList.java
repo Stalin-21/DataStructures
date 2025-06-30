@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class SortedLinkedList<T extends Comparable<T>> {
     Node<T> head;
 
