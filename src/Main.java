@@ -30,10 +30,17 @@ public class Main {
 
         // UC 7: Search for 30
         boolean found = list.search(30);
-        System.out.println("UC7 Search for 30: " + (found ? "Found" : "Not Found"));
+        System.out.println("Search for 30: " + (found ? "Found" : "Not Found"));
 
         //UC 8: Insert 40 after 30
         list.insertAfter(30, 40);
+        list.printList();
+
+        // UC 9: Delete 40 and print size
+        list.deleteNode(40);
+        System.out.print("UC9 List after deleting 40: ");
+        list.printList();  // 30
+        System.out.println("UC9 Size of list: " + list.size());
 
     }
 }
