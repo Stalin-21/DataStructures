@@ -32,6 +32,15 @@ public class Main {
 
         System.out.print("Queue after UC3 enqueues: ");
         queue.printQueue();
+
+        System.out.println("\nUC4: Dequeue elements");
+        while (true) {
+            Integer front = queue.dequeue();
+            if (front == null) break;
+            System.out.println("Dequeued: " + front);
+            System.out.print("Current queue: ");
+            queue.printQueue();
+        }
     }
 
 }

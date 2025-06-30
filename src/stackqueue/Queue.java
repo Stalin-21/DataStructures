@@ -13,6 +13,16 @@ public class Queue<T> {
         linkedList.append(data);
     }
 
+    public T dequeue() {
+        if (linkedList.isEmpty()) {
+            System.out.println("Queue is empty. Nothing to dequeue.");
+            return null;
+        }
+        T frontData = linkedList.getHeadData();
+        linkedList.pop();  // remove head
+        return frontData;
+    }
+
     public void printQueue() {
         linkedList.printList();
     }
