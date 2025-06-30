@@ -42,5 +42,13 @@ public class Main {
         list.printList();  // 30
         System.out.println("UC9 Size of list: " + list.size());
 
+        // UC 10: Sorted List
+        SortedLinkedList<Integer> sortedList = new SortedLinkedList<>();
+        sortedList.add(56);
+        sortedList.add(30);
+        sortedList.add(40);
+        sortedList.add(70);
+        sortedList.printList();  // Output: 30 -> 40 -> 56 -> 70
+
     }
 }
