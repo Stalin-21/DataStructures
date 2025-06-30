@@ -21,5 +21,17 @@ public class Main {
             System.out.print("Current stack: ");
             stack.printStack();
         }
+
+        System.out.println("================ QUEUE ==============");
+        Queue<Integer> queue = new Queue<>();
+
+        // UC3: Enqueue 56, 30, 70
+        queue.enqueue(56);
+        queue.enqueue(30);
+        queue.enqueue(70);
+
+        System.out.print("Queue after UC3 enqueues: ");
+        queue.printQueue();
     }
+
 }
