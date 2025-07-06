@@ -31,4 +31,15 @@ public class BST<T extends Comparable<T>> {
             inOrderRecursive(node.right);
         }
     }
+
+    public int size() {
+        return sizeRecursive(root);
+    }
+
+    private int sizeRecursive(Node<T> node) {
+        if (node == null) {
+            return 0;
+        }
+        return 1 + sizeRecursive(node.left) + sizeRecursive(node.right);
+    }
 }
