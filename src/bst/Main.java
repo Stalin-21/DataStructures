@@ -31,5 +31,9 @@ public class Main {
 
         // UC2: Print size
         System.out.println("Size of tree: " + tree.size());
+
+        //UC3: Search
+        System.out.println("Search 63: " + (tree.search(63) ? "Found" : "Not Found"));
+        System.out.println("Search 70: " + (tree.search(70) ? "Found" : "Not Found"));
     }
 }
