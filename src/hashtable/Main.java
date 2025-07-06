@@ -23,5 +23,10 @@ public class Main {
             largeTable.add(word, 1);
         }
         largeTable.print();
+
+        System.out.println("\n=== UC3: Remove 'avoidable' ===");
+        largeTable.remove("avoidable");
+        largeTable.print();
+
     }
 }
