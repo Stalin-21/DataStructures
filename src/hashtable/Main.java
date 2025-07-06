@@ -16,7 +16,7 @@ public class Main {
         // === UC2: Large/simple paragraph ===
         System.out.println("\n=== UC2: Paragraph ===");
         MyHashTable<String, Integer> largeTable = new MyHashTable<>();
-        String paragraph = "Apples are red and apples are sweet because apples grow on trees";
+        String paragraph = "Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations";
         String[] paraWords = paragraph.toLowerCase().split(" ");
 
         for (String word : paraWords) {
