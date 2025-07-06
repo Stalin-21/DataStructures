@@ -32,6 +32,25 @@ public class BST<T extends Comparable<T>> {
         }
     }
 
+    public boolean search(T key) {
+        return searchRec(root, key);
+    }
+
+    private boolean searchRec(Node<T> current, T key) {
+        if (current == null) {
+            return false;
+        }
+        if (current.data.equals(key)) {
+            return true;
+        }
+        if (key.compareTo(current.data) < 0) {
+            return searchRec(current.left, key);
+        } else {
+            return searchRec(current.right, key);
+        }
+    }
+
+
     public int size() {
         return sizeRecursive(root);
     }
