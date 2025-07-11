@@ -14,7 +14,7 @@ public class MergeSort {
     // Merge Sort recursive function
     public static void mergeSort(int[] arr, int left, int right) {
         if (left < right) {
-            int mid = (left + right) / 2;  // 2
+            int mid = (left + right) / 2;
 
             // Sort first and second halves
             mergeSort(arr, left, mid);
